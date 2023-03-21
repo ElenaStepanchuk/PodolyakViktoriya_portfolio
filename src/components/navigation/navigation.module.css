@@ -1,0 +1,29 @@
+.nav_container {
+  display: flex;
+  background: #131313;
+  padding: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_container :not(:first-child) {
+  margin-left: 30px;
+}
+.nav_link {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.nav_link:hover {
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
+    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff;
+}
+.nav_link:focus {
+  border: solid 2px #fff;
+  border-radius: 5px;
+}
