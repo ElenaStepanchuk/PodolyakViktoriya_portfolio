@@ -1,8 +1,10 @@
+import React from 'react';
+import { AboutComponent, Container } from 'components';
 const About = () => {
   return (
-    <div>
-      <h2>About me</h2>
-    </div>
+    <Container>
+      <AboutComponent />
+    </Container>
   );
 };
 export default About;

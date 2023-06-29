@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b1181f1.css",
-    "main.js": "/static/js/main.784cbbf4.js",
-    "static/js/998.cee6a892.chunk.js": "/static/js/998.cee6a892.chunk.js",
-    "static/js/242.1dc04759.chunk.js": "/static/js/242.1dc04759.chunk.js",
-    "static/js/256.9e3fc6cd.chunk.js": "/static/js/256.9e3fc6cd.chunk.js",
+    "main.css": "/static/css/main.82e11695.css",
+    "main.js": "/static/js/main.0412a537.js",
+    "static/js/998.9499c812.chunk.js": "/static/js/998.9499c812.chunk.js",
+    "static/js/242.70ef5b86.chunk.js": "/static/js/242.70ef5b86.chunk.js",
+    "static/js/256.7f636224.chunk.js": "/static/js/256.7f636224.chunk.js",
     "static/js/667.861d5e84.chunk.js": "/static/js/667.861d5e84.chunk.js",
     "static/js/62.3a355704.chunk.js": "/static/js/62.3a355704.chunk.js",
+    "static/media/homePhoto.png": "/static/media/homePhoto.0ad8735d4b69cc914099.png",
+    "static/media/sambuca.jpg": "/static/media/sambuca.a66370d717f6737e6e9f.jpg",
     "index.html": "/index.html",
-    "main.1b1181f1.css.map": "/static/css/main.1b1181f1.css.map",
-    "main.784cbbf4.js.map": "/static/js/main.784cbbf4.js.map",
-    "998.cee6a892.chunk.js.map": "/static/js/998.cee6a892.chunk.js.map",
-    "242.1dc04759.chunk.js.map": "/static/js/242.1dc04759.chunk.js.map",
-    "256.9e3fc6cd.chunk.js.map": "/static/js/256.9e3fc6cd.chunk.js.map",
+    "main.82e11695.css.map": "/static/css/main.82e11695.css.map",
+    "main.0412a537.js.map": "/static/js/main.0412a537.js.map",
+    "998.9499c812.chunk.js.map": "/static/js/998.9499c812.chunk.js.map",
+    "242.70ef5b86.chunk.js.map": "/static/js/242.70ef5b86.chunk.js.map",
+    "256.7f636224.chunk.js.map": "/static/js/256.7f636224.chunk.js.map",
     "667.861d5e84.chunk.js.map": "/static/js/667.861d5e84.chunk.js.map",
     "62.3a355704.chunk.js.map": "/static/js/62.3a355704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b1181f1.css",
-    "static/js/main.784cbbf4.js"
+    "static/css/main.82e11695.css",
+    "static/js/main.0412a537.js"
   ]
 }

@@ -1,0 +1,9 @@
+.button_lang {
+  display: flex;
+  position: absolute;
+  /* top: 70px;
+  right: 150px; */
+  border: none;
+  padding: 0;
+  background: transparent;
+}

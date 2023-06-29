@@ -1,0 +1,38 @@
+.currentText {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 24px;
+  padding: 6px;
+}
+.currentText:hover {
+  transition: all 0.5s ease;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
+    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff;
+}
+
+.list {
+  background: rgb(00, 00, 00, 0.5);
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+}
+.item {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 24px;
+}
+.item:not(:last-child) {
+  margin-bottom: 6px;
+}
+.item:hover {
+  transition: all 0.5s ease;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
+    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff;
+  cursor: pointer;
+}

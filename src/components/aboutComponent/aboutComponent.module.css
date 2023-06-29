@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+}
+.container1_about {
+  width: 50%;
+  position: relative;
+}
+.container2_about {
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+}
+.about_text {
+  display: flex;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.3;
+}
+.about_text1 {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.3;
+  list-style-type: circle;
+  margin-left: 14px;
+}
+.container_img_left {
+  display: flex;
+  width: 250px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_img_right {
+  display: flex;
+  width: 250px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
