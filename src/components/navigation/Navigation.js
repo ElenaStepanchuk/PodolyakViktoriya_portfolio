@@ -13,9 +13,6 @@ const Navigation = () => {
       <NavLink className={css.nav_link} to="portfolio">
         Portfolio
       </NavLink>
-      <NavLink className={css.nav_link} to="services">
-        Servises
-      </NavLink>
       <NavLink className={css.nav_link} to="contact">
         Contact
       </NavLink>

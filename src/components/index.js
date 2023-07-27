@@ -5,3 +5,8 @@ export { default as Footer } from '../components/footer/Footer';
 export { default as News } from '../components/news/News';
 export { default as Container } from '../components/container/Container';
 export { default as HomeComponent } from '../components/homeComponent/HomeComponent';
+export { default as ModalWindow } from '../components/modalWindow/ModalWindow';
+export { default as AboutComponent } from '../components/aboutComponent/AboutComponent';
+export { default as Backdrop } from '../components/backdrop/Backdrop';
+export { default as SelectLenguage } from '../components/selectLenguage/SelectLenguage';
+export { default as PortfolioComponent } from '../components/portfolioComponent/PortfolioComponent';

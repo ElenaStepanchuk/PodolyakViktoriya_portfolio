@@ -5,14 +5,13 @@ import {
   // BackgroundContainer,
   Header,
   Loader,
-  Footer,
-  News,
+  // Footer,
+  // News,
 } from '../components';
 
 const Home = lazy(() => import('../pages/home/Home'));
 const About = lazy(() => import('../pages/about/About'));
 const Portfolio = lazy(() => import('../pages/portfolio/Portfolio'));
-const Services = lazy(() => import('../pages/services/Services'));
 const Contact = lazy(() => import('../pages/contact/Contact'));
 
 export const App = () => {
@@ -25,12 +24,11 @@ export const App = () => {
           <Route path="home" index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </Suspense>
-      <News />
-      <Footer />
+      {/* <News /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
