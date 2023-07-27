@@ -3,11 +3,13 @@ import React from 'react';
 import { BsInstagram } from 'react-icons/bs';
 import { RiTelegramLine } from 'react-icons/ri';
 import { FaViber } from 'react-icons/fa';
-import { SlArrowDown } from 'react-icons/sl';
+import logotipe from '../../img/home/logo.png';
+// import { SlArrowDown } from 'react-icons/sl';
 
 import SelectLenguage from 'components/selectLenguage';
 
 import css from './homeComponent.module.css';
+
 const HomeComponent = () => {
   return (
     <div className={css.container_home}>
@@ -39,13 +41,14 @@ const HomeComponent = () => {
           </a>
         </div>
         <div className={css.container_home_logotipe}>
-          <p className={css.home_logotipe}>VictoriyaPodolyak</p>
+          <img className={css.home_logotipe} src={logotipe} alt="logotipe" />
+          {/* <p className={css.home_logotipe}>VictoriyaPodolyak</p> */}
         </div>
         <SelectLenguage top={'70px'} right={'150px'} />
         <h1 className={css.home_tittle}>
-          Architect <br /> Victoria Podolyak
+          Architect <br className={css.home_tittle2} /> Victoria Podolyak
         </h1>
-        <SlArrowDown className={css.arrow_icon} />
+        {/* <SlArrowDown className={css.arrow_icon} /> */}
       </div>
     </div>
   );

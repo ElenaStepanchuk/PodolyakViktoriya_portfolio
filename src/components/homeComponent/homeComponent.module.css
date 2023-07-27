@@ -81,16 +81,10 @@
 }
 .home_logotipe {
   display: flex;
-  color: #ffffff;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.3;
-  justify-content: center;
-  text-align: center;
-  width: 400px;
+  width: 80px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 .home_tittle {
   display: flex;
@@ -104,9 +98,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;
+  margin-bottom: 240px;
   width: 821px;
 }
-.arrow_icon {
+.home_tittle2 {
+  margin-bottom: 80px;
+}
+/* .arrow_icon {
   display: flex;
   width: 70px;
   height: 31px;
@@ -114,4 +112,4 @@
   margin-top: 210px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
