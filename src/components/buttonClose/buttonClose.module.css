@@ -1,0 +1,23 @@
+.button {
+  position: absolute;
+  background-color: #000000;
+  padding: 7px;
+
+  top: 20px;
+  right: -60px;
+  border: none;
+}
+.button_icon {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  color: #ffffff;
+}
+.button_icon:hover {
+  background: #ffffff;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
+    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff;
+}

@@ -10,3 +10,10 @@ export { default as AboutComponent } from '../components/aboutComponent/AboutCom
 export { default as Backdrop } from '../components/backdrop/Backdrop';
 export { default as SelectLenguage } from '../components/selectLenguage/SelectLenguage';
 export { default as PortfolioComponent } from '../components/portfolioComponent/PortfolioComponent';
+export { default as Works1Component } from '../components/works1Component/Works1Component';
+export { default as Works2Component } from '../components/works2Component/Works2Component';
+export { default as Works3Component } from '../components/works3Component/Works3Component';
+export { default as MyPictureComponent } from '../components/myPictureComponent/MyPictureComponent';
+export { default as ButtonClose } from '../components/buttonClose/ButtonClose';
+export { default as ButtonLeft } from '../components/buttonLeft/ButtonLeft';
+export { default as ButtonRight } from '../components/buttonRight/ButtonRight';

@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 .backdrop {
-  background-size: cover;
+  /* background-size: cover; */
   background: rgba(0, 0, 0, 0.7);
   padding-top: 100px;
   padding-bottom: 50px;
