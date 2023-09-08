@@ -1,4 +1,15 @@
 .container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  background-image: url('../../img/about/bg6.jpg');
+  margin-left: auto;
+  margin-right: auto;
+}
+.backdrop {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
   display: flex;
 }
 .container1_about {
@@ -13,6 +24,7 @@
 .about_text {
   display: flex;
   color: #ffffff;
+  /* color: #000000; */
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 17px;
