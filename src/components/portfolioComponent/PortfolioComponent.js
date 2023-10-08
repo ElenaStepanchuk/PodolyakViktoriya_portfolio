@@ -1,4 +1,3 @@
-// import { ImageViewer } from 'react-image-viewer-dv';
 import { Link, Outlet } from 'react-router-dom';
 
 import css from './portfolioComponent.module.css';
@@ -6,12 +5,8 @@ import work1 from '../../img/portfolio/firstWork/houseWidthMoreFlors.png';
 import work2 from '../../img/portfolio/secondWork/1ORBKportfolio.png';
 import work3 from '../../img/portfolio/thirdWork/1title.png';
 import myPictures from '../../img/portfolio/myPicture/1.JPG';
-// import work5 from '../../img/portfolio/34.JPG';
-// import work6 from '../../img/portfolio/35.JPG';
-// import work7 from '../../img/portfolio/36.JPG';
-// import work8 from '../../img/portfolio/37.JPG';
-// import work9 from '../../img/portfolio/38.JPG';
-// import work10 from '../../img/portfolio/39.JPEG';
+
+import SelectLenguage from 'components/selectLenguage';
 
 const arrayGalleryWorks = [
   { preview: work1, original: work1, description: 'work 1', to: 'works1' },
@@ -23,12 +18,6 @@ const arrayGalleryWorks = [
     description: 'myPictures',
     to: 'myPictures',
   },
-  // { preview: work5, original: work5, description: 'work 5' },
-  // { preview: work6, original: work6, description: 'work 6' },
-  // { preview: work7, original: work7, description: 'work 7' },
-  // { preview: work8, original: work8, description: 'work 8' },
-  // { preview: work9, original: work9, description: 'work 9' },
-  // { preview: work10, original: work10, description: 'work 10' },
 ];
 
 const CreateGallery = () => {
@@ -54,6 +43,7 @@ const CreateGallery = () => {
 const PortfolioComponent = () => {
   return (
     <div className={css.container_portfolio}>
+      <SelectLenguage top={'10px'} right={'0'} />
       <h1 className={css.title_portfolio}>Portfolio</h1>
       <div className={css.gallery_portfolio}>
         <div className={css.gallery}>
