@@ -1,16 +1,36 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
+import LocalizedStrings from 'react-localization';
 
 import { BsInstagram } from 'react-icons/bs';
 import { RiTelegramLine } from 'react-icons/ri';
 import { FaViber } from 'react-icons/fa';
 import logotipe from '../../img/home/logo.png';
-// import { SlArrowDown } from 'react-icons/sl';
 
 import SelectLenguage from 'components/selectLenguage';
 
 import css from './homeComponent.module.css';
 
 const HomeComponent = () => {
+  let translate = new LocalizedStrings({
+    UA: {
+      arhitect: 'Архітектор',
+      name: 'Вікторія Подоляк',
+    },
+    EN: {
+      arhitect: 'Architect',
+      name: 'Victoria Podolyak',
+    },
+  });
+
+  const [state, setState] = useState('UA');
+
+  useEffect(() => {
+    let leng = localStorage.getItem('language');
+    setState(leng);
+  }, [state]);
+
+  translate.setLanguage(state);
+
   return (
     <div className={css.container_home}>
       <div className={css.backdrop}>
@@ -42,13 +62,12 @@ const HomeComponent = () => {
         </div>
         <div className={css.container_home_logotipe}>
           <img className={css.home_logotipe} src={logotipe} alt="logotipe" />
-          {/* <p className={css.home_logotipe}>VictoriyaPodolyak</p> */}
         </div>
         <SelectLenguage top={'70px'} right={'150px'} />
         <h1 className={css.home_tittle}>
-          Architect <br className={css.home_tittle2} /> Victoria Podolyak
+          {translate.arhitect} <br className={css.home_tittle2} />
+          {translate.name}
         </h1>
-        {/* <SlArrowDown className={css.arrow_icon} /> */}
       </div>
     </div>
   );

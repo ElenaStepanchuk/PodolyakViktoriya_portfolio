@@ -5,8 +5,8 @@ import ModalWindow from 'components/modalWindow';
 
 const SelectLenguage = ({ top, right }) => {
   const [open, setOpen] = useState(false);
-  const [selectText, setSelectText] = useState('EN');
-  const lengMenu = ['EN', 'UA'];
+  const [selectText, setSelectText] = useState('UA');
+  const lengMenu = ['UA', 'EN'];
 
   const handleShowModal = () => setOpen(isOpen => !isOpen);
 
@@ -26,6 +26,7 @@ const SelectLenguage = ({ top, right }) => {
     localStorage.setItem('language', chooseText);
     const lang = localStorage.getItem('language');
     setSelectText(lang);
+    window.location.reload();
   };
 
   return (

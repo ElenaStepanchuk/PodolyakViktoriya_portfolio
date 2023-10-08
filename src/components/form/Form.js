@@ -136,7 +136,7 @@ const Form = () => {
         </div>
         {/* <div className={css.container_button}> */}
         <button className={css.form_button} type="submit" onClick={sendEmail}>
-          send
+          Send
         </button>
         {/* </div> */}
       </form>

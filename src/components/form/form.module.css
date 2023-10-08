@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 450px;
+  height: 400px;
 }
 .input_wrapper {
   position: relative;
@@ -13,30 +14,32 @@
   padding: 10px;
   color: #000000;
   font-style: italic;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 14px;
   outline: none;
   border: 2px solid transparent;
   border-radius: 4px;
   transition: all 0.1s linear;
+  background: rgb(255, 255, 255, 0.3);
 }
 .form_input_message {
   width: 410px;
   height: 120px;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   color: #000000;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-style: italic;
   font-size: 14px;
   outline: none;
   border: 2px solid transparent;
   border-radius: 4px;
   transition: all 0.1s linear;
+  background: rgb(255, 255, 255, 0.3);
 }
 .form_input:focus,
 .form_input_message:focus {
-  /* transition: all 0.5s ease; */
-  /* box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
-    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff; */
-  /* box-shadow: 5px -5px 5px #b8b8b8; */
   border: 2px solid #b8b8b8;
 }
 .form_input::placeholder,
@@ -48,10 +51,12 @@
   pointer-events: none;
   position: absolute;
   top: 22px;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 14px;
   left: 10px;
   transition: all 0.1s linear;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #b8b8b8;
   padding: 5px;
   box-sizing: border-box;
@@ -65,30 +70,32 @@
   background-color: transparent;
 }
 .form_button {
-  border: 2px solid #ffffff;
-  color: #000000;
-  background: #ffffff;
+  border: 2px solid transparent;
+  color: #ffffff;
+  background-color: rgb(255, 255, 255, 0.3);
   border-radius: 4px;
   font-style: italic;
   font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 800;
   margin-top: 10px;
   padding: 10px;
   width: 100px;
   outline: none;
+  overflow: hidden;
 }
 .form_button:hover {
-  /* transition: all 0.5s ease;
-  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
-    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff; */
   border: 2px solid #b8b8b8;
-  background: #b8b8b8;
+  transition: all 0.5s ease;
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px #fff,
+    0 0 20px #fff, 0 0 30px #fff, 0 0 55px #fff, 0 0 80px #fff;
+  cursor: pointer;
 }
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
   .form {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -142,7 +149,7 @@
     font-size: 6px;
     left: 2px;
     transition: all 0.1s linear;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     color: rgba(121, 99, 78, 0.5);
     padding: 1px;
     box-sizing: border-box;
@@ -171,4 +178,4 @@
     background: rgba(121, 99, 78, 1);
     color: #ffffff;
   }
-}
+} */
