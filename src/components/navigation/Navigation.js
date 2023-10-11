@@ -25,7 +25,9 @@ const Navigation = () => {
 
   useEffect(() => {
     let leng = localStorage.getItem('language');
-    setState(leng);
+    if (leng !== null) {
+      setState(leng);
+    }
   }, [state]);
 
   translate.setLanguage(state);

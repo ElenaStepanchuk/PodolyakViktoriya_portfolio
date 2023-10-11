@@ -1,4 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import LocalizedStrings from 'react-localization';
 
 import css from './portfolioComponent.module.css';
 import work1 from '../../img/portfolio/firstWork/houseWidthMoreFlors.png';
@@ -41,10 +43,30 @@ const CreateGallery = () => {
 };
 
 const PortfolioComponent = () => {
+  let translate = new LocalizedStrings({
+    UA: {
+      title: 'Портфоліо',
+    },
+    EN: {
+      title: 'Portfolio',
+    },
+  });
+
+  const [state, setState] = useState('UA');
+
+  useEffect(() => {
+    let leng = localStorage.getItem('language');
+    if (leng !== null) {
+      setState(leng);
+    }
+  }, [state]);
+
+  translate.setLanguage(state);
+
   return (
     <div className={css.container_portfolio}>
       <SelectLenguage top={'10px'} right={'0'} />
-      <h1 className={css.title_portfolio}>Portfolio</h1>
+      <h1 className={css.title_portfolio}>{translate.title}</h1>
       <div className={css.gallery_portfolio}>
         <div className={css.gallery}>
           <CreateGallery />

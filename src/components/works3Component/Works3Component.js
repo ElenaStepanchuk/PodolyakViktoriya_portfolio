@@ -76,9 +76,11 @@ const Works3Component = () => {
     if (i < imagesArray.length - 1) {
       i += 1;
       setStateImg(imagesArray[i]);
+      setStateTitle(titleArray[i]);
       return;
     }
     setStateImg(imagesArray[0]);
+    setStateTitle(titleArray[0]);
     return;
   };
 
