@@ -1,5 +1,7 @@
 import css from './form.module.css';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import LocalizedStrings from 'react-localization';
+
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 import emailjs from '@emailjs/browser';
@@ -11,6 +13,41 @@ const Form = () => {
   const [message, setMessage] = useState('');
 
   const form = useRef();
+
+  let translate = new LocalizedStrings({
+    UA: {
+      name: 'Ваше ім`я',
+      email: 'Ваш емейл',
+      subject: 'Тема',
+      message: 'Повідомлення',
+      send: 'Відправити',
+      notifySend: 'Ваш лист відправлено!',
+      notlifyNotSend:
+        'Ваш лист не відправлено, будь-ласка спробуйте знов пізніше!',
+      notlifyEnterAllFields: 'Заповніть всі поля у формі!',
+    },
+    EN: {
+      name: 'Your name',
+      email: 'Your email',
+      subject: 'Subject',
+      message: 'Message',
+      send: 'Send',
+      notifySend: 'Your message sent!',
+      notlifyNotSend: 'Message not sent, please try again later!',
+      notlifyEnterAllFields: 'Enter all fields in form!',
+    },
+  });
+
+  const [state, setState] = useState('UA');
+
+  useEffect(() => {
+    let leng = localStorage.getItem('language');
+    if (leng !== null) {
+      setState(leng);
+    }
+  }, [state]);
+
+  translate.setLanguage(state);
 
   const handleInputChange = event => {
     const { name, value } = event.currentTarget;
@@ -42,7 +79,7 @@ const Form = () => {
   const sendEmail = event => {
     event.preventDefault();
     if (!name || !email || !subject || !message) {
-      return Notify.failure('Enter all fields in form!', {
+      return Notify.failure(`${translate.notlifyEnterAllFields}`, {
         width: '200px',
         position: 'center-center',
         distance: '10px',
@@ -59,12 +96,12 @@ const Form = () => {
         )
         .then(
           () => {
-            Notify.success('Your message sent');
+            Notify.success(`${translate.notifySend}`);
             console.log('Email send');
             reset();
           },
           () => {
-            Notify.failure('Message not sent, please try again later!');
+            Notify.failure(`${translate.notlifyNotSend}`);
             throw console.error('Email not send');
           }
         );
@@ -87,7 +124,7 @@ const Form = () => {
             required
             onChange={handleInputChange}
           ></input>
-          <label className={css.form_label}>Your name</label>
+          <label className={css.form_label}>{translate.name}</label>
         </div>
         <div className={css.input_wrapper}>
           <input
@@ -102,7 +139,7 @@ const Form = () => {
             required
             onChange={handleInputChange}
           ></input>
-          <label className={css.form_label}>Your email</label>
+          <label className={css.form_label}>{translate.email}</label>
         </div>
         <div className={css.input_wrapper}>
           <input
@@ -117,7 +154,7 @@ const Form = () => {
             required
             onChange={handleInputChange}
           ></input>
-          <label className={css.form_label}>Subject</label>
+          <label className={css.form_label}>{translate.subject}</label>
         </div>
         <div className={css.input_wrapper}>
           <textarea
@@ -132,13 +169,11 @@ const Form = () => {
             required
             onChange={handleInputChange}
           ></textarea>
-          <label className={css.form_label}>Message</label>
+          <label className={css.form_label}>{translate.message}</label>
         </div>
-        {/* <div className={css.container_button}> */}
         <button className={css.form_button} type="submit" onClick={sendEmail}>
-          Send
+          {translate.send}
         </button>
-        {/* </div> */}
       </form>
     </>
   );

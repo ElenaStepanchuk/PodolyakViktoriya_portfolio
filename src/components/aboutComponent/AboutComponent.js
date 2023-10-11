@@ -1,5 +1,4 @@
 import css from './aboutComponent.module.css';
-// import Backdrop from 'components/backdrop/Backdrop';
 import SelectLenguage from 'components/selectLenguage';
 
 import SimpleImageSlider from 'react-simple-image-slider';
@@ -108,7 +107,9 @@ const AboutComponent = () => {
 
   useEffect(() => {
     let leng = localStorage.getItem('language');
-    setState(leng);
+    if (leng !== null) {
+      setState(leng);
+    }
   }, [state]);
 
   translate.setLanguage(state);
